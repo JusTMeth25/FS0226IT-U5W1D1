@@ -1,0 +1,88 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.example:U5W1D1 >-------------------------
+[INFO] Building U5W1D1 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.1.1:run (default-cli) > test-compile @ U5W1D1 >>>
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ U5W1D1 ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ U5W1D1 ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ U5W1D1 ---
+[INFO] skip non existing resourceDirectory C:\Users\lolpo\OneDrive\Desktop\Epicode-Esercizi-Corso\FS0226IT-U5W1D1\U5W1D1\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ U5W1D1 ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:4.1.1:run (default-cli) < test-compile @ U5W1D1 <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.1.1:run (default-cli) @ U5W1D1 ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.1)
+
+2026-09-07T17:41:10.007+02:00  INFO 30424 --- [U5W1D1] [  restartedMain] com.example.u5w1d1.U5W1D1Application     : Starting U5W1D1Application using Java 25.0.3 with PID 30424 (C:\Users\lolpo\OneDrive\Desktop\Epicode-Esercizi-Corso\FS0226IT-U5W1D1\U5W1D1\target\classes started by lolpo in C:\Users\lolpo\OneDrive\Desktop\Epicode-Esercizi-Corso\FS0226IT-U5W1D1\U5W1D1)
+2026-09-07T17:41:10.013+02:00  INFO 30424 --- [U5W1D1] [  restartedMain] com.example.u5w1d1.U5W1D1Application     : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T17:41:10.105+02:00  INFO 30424 --- [U5W1D1] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-07T17:41:10.105+02:00  INFO 30424 --- [U5W1D1] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-07T17:41:11.110+02:00  INFO 30424 --- [U5W1D1] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-07T17:41:11.190+02:00  INFO 30424 --- [U5W1D1] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 1 JPA repository interface.
+2026-09-07T17:41:12.077+02:00  INFO 30424 --- [U5W1D1] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 3001 (http)
+2026-09-07T17:41:12.098+02:00  INFO 30424 --- [U5W1D1] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T17:41:12.099+02:00  INFO 30424 --- [U5W1D1] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-07T17:41:12.162+02:00  INFO 30424 --- [U5W1D1] [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2056 ms
+2026-09-07T17:41:12.461+02:00  INFO 30424 --- [U5W1D1] [  restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-07T17:41:12.531+02:00  INFO 30424 --- [U5W1D1] [  restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-07T17:41:13.277+02:00  INFO 30424 --- [U5W1D1] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-07T17:41:13.325+02:00  INFO 30424 --- [U5W1D1] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-07T17:41:13.538+02:00  INFO 30424 --- [U5W1D1] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@29043c51
+2026-09-07T17:41:13.541+02:00  INFO 30424 --- [U5W1D1] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-07T17:41:13.680+02:00  INFO 30424 --- [U5W1D1] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/U5W1D1]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.4
+	Default catalog/schema: U5W1D1/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-07T17:41:15.134+02:00  INFO 30424 --- [U5W1D1] [  restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: alter table if exists poi alter column latitude set data type DECIMAL(9,6)
+Hibernate: alter table if exists poi alter column longitude set data type DECIMAL(9,6)
+2026-09-07T17:41:15.254+02:00  INFO 30424 --- [U5W1D1] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-07T17:41:15.672+02:00  INFO 30424 --- [U5W1D1] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-07T17:41:16.028+02:00  WARN 30424 --- [U5W1D1] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-07T17:41:16.190+02:00  WARN 30424 --- [U5W1D1] [  restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 16c491aa-c5d3-40b7-9941-773f34cf2f44
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-07T17:41:16.204+02:00  INFO 30424 --- [U5W1D1] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-07T17:41:16.808+02:00  INFO 30424 --- [U5W1D1] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 3001 (http) with context path '/'
+2026-09-07T17:41:16.820+02:00  INFO 30424 --- [U5W1D1] [  restartedMain] com.example.u5w1d1.U5W1D1Application     : Started U5W1D1Application in 7.345 seconds (process running for 8.002)
+2026-09-07T17:41:25.852+02:00  INFO 30424 --- [U5W1D1] [nio-3001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-07T17:41:25.853+02:00  INFO 30424 --- [U5W1D1] [nio-3001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-07T17:41:25.854+02:00  INFO 30424 --- [U5W1D1] [nio-3001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+Hibernate: select p1_0.id,p1_0.created_at,p1_0.descrizione,p1_0.indirizzo,p1_0.latitude,p1_0.longitude,p1_0.nome,p1_0.tipologia,p1_0.updated_at from poi p1_0 where p1_0.latitude between ? and ? and p1_0.longitude between ? and ?
+Hibernate: select p1_0.id,p1_0.created_at,p1_0.descrizione,p1_0.indirizzo,p1_0.latitude,p1_0.longitude,p1_0.nome,p1_0.tipologia,p1_0.updated_at from poi p1_0 where p1_0.latitude between ? and ? and p1_0.longitude between ? and ?
+Hibernate: select p1_0.id,p1_0.created_at,p1_0.descrizione,p1_0.indirizzo,p1_0.latitude,p1_0.longitude,p1_0.nome,p1_0.tipologia,p1_0.updated_at from poi p1_0 where p1_0.latitude between ? and ? and p1_0.longitude between ? and ?
+Hibernate: select p1_0.id,p1_0.created_at,p1_0.descrizione,p1_0.indirizzo,p1_0.latitude,p1_0.longitude,p1_0.nome,p1_0.tipologia,p1_0.updated_at from poi p1_0 where p1_0.latitude between ? and ? and p1_0.longitude between ? and ?
+Hibernate: select p1_0.id,p1_0.created_at,p1_0.descrizione,p1_0.indirizzo,p1_0.latitude,p1_0.longitude,p1_0.nome,p1_0.tipologia,p1_0.updated_at from poi p1_0 where p1_0.latitude between ? and ? and p1_0.longitude between ? and ?

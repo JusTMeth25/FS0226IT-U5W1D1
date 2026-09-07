@@ -1,8 +1,10 @@
 package com.example.u5w1d1.geocoding;
 
+import com.example.u5w1d1.config.CacheConfig;
 import com.example.u5w1d1.geocoding.dto.GeocodeResponse;
 import com.example.u5w1d1.geocoding.dto.GoogleGeocodeResponse;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -19,6 +21,7 @@ public class GeocodingService {
         this.geocodingClient = geocodingClient;
     }
 
+    @Cacheable(CacheConfig.GEOCODING_CACHE)
     public GeocodeResponse geocode(String address) {
         GoogleGeocodeResponse response = geocodingClient.geocode(address, apiKey);
         if (!"OK".equals(response.status()) || response.results().isEmpty()) {
@@ -32,6 +35,7 @@ public class GeocodingService {
         );
     }
 
+    @Cacheable(CacheConfig.REVERSE_GEOCODING_CACHE)
     public GeocodeResponse reverseGeocode(BigDecimal latitude, BigDecimal longitude) {
         String latlng = latitude.toPlainString() + "," + longitude.toPlainString();
         GoogleGeocodeResponse response = geocodingClient.reverseGeocode(latlng, apiKey);

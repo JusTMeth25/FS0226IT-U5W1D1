@@ -173,3 +173,14 @@ html, body, #root {
   font-size: 13px;
   margin: 0;
 }
+
+.modal input[readonly] {
+  background: #f0f0f0;
+  color: #666;
+}
+
+.modal .hint {
+  color: #888;
+  font-size: 12px;
+  margin: -4px 0 0;
+}

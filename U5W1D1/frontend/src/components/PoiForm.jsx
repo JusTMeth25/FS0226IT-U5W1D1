@@ -122,13 +122,30 @@ export default function PoiForm({ poi, initialLocation, onClose, onSaved }) {
         <div className="row">
           <label>
             Latitudine
-            <input type="number" step="0.000001" value={form.latitude} onChange={handleChange('latitude')} required />
+            <input
+              type="number"
+              step="0.000001"
+              value={form.latitude}
+              onChange={handleChange('latitude')}
+              readOnly={Boolean(initialLocation)}
+              required
+            />
           </label>
           <label>
             Longitudine
-            <input type="number" step="0.000001" value={form.longitude} onChange={handleChange('longitude')} required />
+            <input
+              type="number"
+              step="0.000001"
+              value={form.longitude}
+              onChange={handleChange('longitude')}
+              readOnly={Boolean(initialLocation)}
+              required
+            />
           </label>
         </div>
+        {initialLocation && (
+          <p className="hint">Posizione impostata dal punto selezionato sulla mappa.</p>
+        )}
 
         {error && <p className="error">{error}</p>}
 

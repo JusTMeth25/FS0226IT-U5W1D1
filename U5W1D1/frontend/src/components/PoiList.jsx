@@ -17,6 +17,7 @@ export default function PoiList({ pois, selectedId, onSelect, onEdit, onDelete }
           <div className="poi-info">
             <strong>{poi.nome}</strong>
             <small>{poi.tipologia}</small>
+            {poi.indirizzo && <small>{poi.indirizzo}</small>}
           </div>
           <div className="poi-actions">
             <button type="button" onClick={(e) => { e.stopPropagation(); onEdit(poi) }}>Modifica</button>

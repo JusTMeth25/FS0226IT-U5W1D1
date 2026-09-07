@@ -125,6 +125,10 @@ export default function MapView({ mapId, pois, selectedId, onSelect, onBoundsCha
             <strong>{selectedPoi.nome}</strong>
             <div>{selectedPoi.tipologia}</div>
             {selectedPoi.descrizione && <p>{selectedPoi.descrizione}</p>}
+            {selectedPoi.indirizzo && <p>{selectedPoi.indirizzo}</p>}
+            <small>
+              {Number(selectedPoi.latitude).toFixed(6)}, {Number(selectedPoi.longitude).toFixed(6)}
+            </small>
           </div>
         </InfoWindow>
       )}
